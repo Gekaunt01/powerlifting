@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdk 23
+    defaultConfig {
+        applicationId 'com.powerlifting.trainer'
+        minSdkVersion 13
+        targetSdkVersion 23
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:23.1.0'
+    implementation 'com.android.support:support-v4:23.1.0'
+    implementation project(':circular_bar_pager_library')
+
+    implementation 'com.android.support:recyclerview-v7:23.1.0'
+    implementation 'com.makeramen:roundedimageview:2.2.1'
+    implementation('com.github.afollestad.material-dialogs:core:0.8.4.2@aar') {
+        transitive = true
+    }
+    implementation 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    implementation 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'net.i2p.android.ext:floatingactionbutton:1.10.0'
+    implementation 'com.mikepenz:iconics-core:2.1.0@aar'
+    implementation 'com.mikepenz:google-material-typeface:2.1.2.1@aar'
+    implementation 'com.github.mrengineer13:snackbar:1.2.0'
+    implementation 'com.github.AndroidDeveloperLB:MaterialPreferenceLibrary:5'
+}

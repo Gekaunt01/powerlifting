@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.powerlifting.trainer" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.powerlifting.trainer.activities.ActivitySplash"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.powerlifting.trainer.activities.ActivityHome"
+            android:launchMode="singleTop"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.powerlifting.trainer.activities.ActivityWorkouts"
+            android:launchMode="singleTop"
+            android:label="@string/app_name"
+            android:parentActivityName="com.powerlifting.trainer.activities.ActivityHome"
+            android:screenOrientation="portrait" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.powerlifting.trainer.activities.ActivityHome" />
+        </activity>
+        <activity
+            android:name="com.powerlifting.trainer.activities.ActivityStopWatch"
+            android:label=""
+            android:parentActivityName="com.powerlifting.trainer.activities.ActivityWorkouts"
+            android:screenOrientation="portrait" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.powerlifting.trainer.activities.ActivityWorkouts" />
+        </activity>
+        <activity
+            android:name="com.powerlifting.trainer.activities.ActivityAbout"
+            android:label="@string/about"
+            android:parentActivityName="com.powerlifting.trainer.activities.ActivityHome"
+            android:screenOrientation="portrait" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.powerlifting.trainer.activities.ActivityHome" />
+        </activity>
+        <activity
+            android:name="com.powerlifting.trainer.activities.ActivityDetail"
+            android:label=""
+            android:parentActivityName="com.powerlifting.trainer.activities.ActivityWorkouts"
+            android:screenOrientation="portrait" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.powerlifting.trainer.activities.ActivityWorkouts" />
+        </activity>
+    </application>
+
+</manifest>

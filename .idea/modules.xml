@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/powerlifting_trainer.iml" filepath="$PROJECT_DIR$/.idea/modules/powerlifting_trainer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/powerlifting_trainer.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/powerlifting_trainer.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/powerlifting_trainer.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/powerlifting_trainer.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/powerlifting_trainer.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/powerlifting_trainer.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/powerlifting_trainer.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/powerlifting_trainer.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/circular_bar_pager_library/powerlifting_trainer.circular_bar_pager_library.iml" filepath="$PROJECT_DIR$/.idea/modules/circular_bar_pager_library/powerlifting_trainer.circular_bar_pager_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/circular_bar_pager_library/powerlifting_trainer.circular_bar_pager_library.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/circular_bar_pager_library/powerlifting_trainer.circular_bar_pager_library.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/circular_bar_pager_library/powerlifting_trainer.circular_bar_pager_library.main.iml" filepath="$PROJECT_DIR$/.idea/modules/circular_bar_pager_library/powerlifting_trainer.circular_bar_pager_library.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/circular_bar_pager_library/powerlifting_trainer.circular_bar_pager_library.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/circular_bar_pager_library/powerlifting_trainer.circular_bar_pager_library.unitTest.iml" />
+    </modules>
+  </component>
+</project>
